@@ -1,0 +1,154 @@
+body {
+    color: #ffffff;
+}
+a {
+    color: #ffffff;
+}
+
+#bgvid {
+    z-index: -2;
+    background: url("..images/background.jpg") no-repeat;
+    background-size: cover;
+}
+
+#bgfilter {
+    z-index: -1;
+    background-color: #000000;
+    opacity: 0.25;
+}
+
+#intro {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#intro > #logo {
+    width: 70%;
+    margin: 0 15% 0 15%;
+}
+#intro > #caption {
+    margin: 1em 0 0 0;
+    font-family: 'Overpass', sans-serif;
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+
+#content {
+    margin: 100vh 0 0 0;
+    padding: 1%;
+}
+#content > #tenants {
+    list-style: none;
+}
+#content > #tenants > li {
+    display: block;
+    height: 20%;
+    vertical-align: top;
+    margin: 0 0 2em -1em;
+    padding: 2%;
+    font-size: 1.5em;
+    text-align: center;
+}
+#content > #tenants > li > i{
+    display: block;
+    margin: 0 0 .5em 0;
+    font-size: 1.5em;
+}
+#content > .section {
+    padding: 1%;
+    margin: 0 0 1% 0;
+    border-radius: 4px;
+    background-color: #ffffff;
+    opacity: .5;
+    color: #000000;
+}
+#content > .full {
+    width: 98%;
+}
+#content > .half-left {
+    width: 98%;
+}
+#content > .half-right {
+    width: 98%;
+}
+#content > #footer {
+    margin: 5% 0 0 0;
+    font-size: .75em;
+    color: #ffffff;
+    text-align: right;
+}
+@media screen and (min-width: 1025px) {
+    #content > #tenants > li {
+        font-size: 2em;
+    }
+    #content > #tenants > li > i{
+        font-size: 2em;
+    }
+}
+@media screen and (min-width: 750px) {
+    #content > #tenants {
+        width: 70%;
+        margin: 0 15% 0 15%;
+    }
+    #content > #tenants > li {
+        display: inline-block;
+        width: 22%;
+    }
+    #content > .half-left {
+        display: inline-block;
+        width: 47.5%;
+        margin: 0 0.5% 0 0;
+    }
+    #content > .half-right {
+        display: inline-block;
+        width: 47.5%;
+        margin: 0 0 0 0.5%;
+    }
+}
+
+/******************************/
+/** BASIC, UNIVERSAL CLASSES **/
+/******************************/
+
+.inline-block {
+    display: inline-block;
+}
+
+.flipvirt {
+    position: relative;
+    top: -3px;
+    -moz-transform: scale(1, -1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+}
+
+.fillpage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    -o-user-select: none;
+    user-select: none;
+}
