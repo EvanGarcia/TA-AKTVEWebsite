@@ -20,6 +20,20 @@ p {
     opacity: 0.25;
 }
 
+#bgvidcontrol {
+    display: block;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    color: #ffffff;
+}
+
+#footer {
+    padding: 1%;
+    font-size: .5em;
+    color: #ffffff;
+}
+
 #logo {
     width: 70%;
     margin: 0 15% 0 15%;
@@ -58,13 +72,6 @@ p {
 #tenants > .tenant > i{
     display: block;
     margin: 0 0 .5em 0;
-}
-#footer {
-    padding: 1%;
-    font-size: .5em;
-    color: #ffffff;
-    text-align: right;
-    opacity: 0.25;
 }
 @media screen and (min-width: 750px) {
     /* On wide-screens, allow tenants to sit side-by-side */
